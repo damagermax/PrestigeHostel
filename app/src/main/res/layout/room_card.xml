@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roomNumber"
+                android:textColor="@color/black"
+                android:text="2nd F 189"/>
+
+            <TextView
+                android:id="@+id/roomPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="$ 200"
+                android:textStyle="bold"
+                android:textColor="@color/orange"
+                android:layout_alignParentEnd="true"
+               />
+            <View
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:id="@+id/roomStatusIndicator"
+                android:layout_below="@id/roomNumber"
+             android:layout_marginTop="9dp"
+                android:background="@drawable/room_status"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roomStatus"
+                android:textSize="11sp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/roomStatusIndicator"
+                android:layout_marginTop="5dp"
+                android:layout_below="@id/roomNumber"
+                android:text="Available"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/roomGuest"
+                android:alpha=".8"
+                android:textSize="11sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/roomStatus"
+                android:text="4 Gguest"/>
+
+            <TextView
+                android:id="@+id/roomBedsLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/roomStatus"
+                android:layout_toEndOf="@id/roomGuest"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:alpha=".8"
+                android:text="4 Beds left"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/roomKitchen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/roomStatus"
+                android:layout_marginStart="20dp"
+                android:alpha=".8"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/roomBedsLeft"
+                android:text="Ketchen"
+                android:textSize="11sp"/>
+
+            <TextView
+                android:id="@+id/roomBathroom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/roomStatus"
+                android:layout_marginStart="20dp"
+                android:alpha=".8"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/roomKitchen"
+                android:text="bathroom"
+                android:textSize="11sp"/>
+
+        </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>
