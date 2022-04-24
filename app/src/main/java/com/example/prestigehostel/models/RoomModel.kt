@@ -6,7 +6,6 @@ package com.example.prestigehostel.models
 
 data class RoomModel (
     val number:String="",
-    val status:String="",
     val price:String="",
     val numberOfGuest:Int=0,
     val bedsLeft:Int=0,

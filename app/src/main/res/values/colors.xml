@@ -10,4 +10,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="white400">#E2E2E2</color>
     <color name="white300">#C0DAEE</color>
+    <color name="red">#F24431</color>
+    <color name="yellow">#F2D850</color>
+    <color name="green">#039D87</color>
 </resources>

@@ -1,12 +1,14 @@
 package com.example.prestigehostel.adapters
 
 import android.annotation.SuppressLint
+import android.graphics.Color
 import android.opengl.Visibility
 import android.view.LayoutInflater
 import android.view.TextureView
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.example.prestigehostel.R
 import com.example.prestigehostel.models.RoomModel
@@ -44,38 +46,40 @@ class RoomAdapter : RecyclerView.Adapter<RoomAdapter.RoomViewHolder>() {
 
         holder.numberTv.text = currentRoomModel.number
         holder.priceTv.text = currentRoomModel.price
-        holder.statusTv.text = currentRoomModel.status
+
 
         // change status indicator color and status text depending on room status
         when {
             currentRoomModel.bedsLeft == 0 -> {
                 holder.statusTv.text = FULL
+                holder.statusIndicator.setBackgroundResource(R.drawable.room_status_red)
+
 
             }
             currentRoomModel.numberOfGuest == currentRoomModel.bedsLeft -> {
                 holder.statusTv.text = AVAILABLE
-
+                holder.statusIndicator.setBackgroundResource(R.drawable.room_status_yellow)
             }
             currentRoomModel.bedsLeft != 0 && currentRoomModel.bedsLeft != currentRoomModel.numberOfGuest -> {
                 holder.statusTv.text = ALMOST_FULL
-
+                holder.statusIndicator.setBackgroundResource(R.drawable.room_status_green)
             }
         }
 
         // make "bed" singular or plural depending on the number of bed left
         when {
             currentRoomModel.bedsLeft > 1 -> {
-                holder.bedsLeftTv.text = currentRoomModel.bedsLeft.toString() + "BedS Left"
+                holder.bedsLeftTv.text = currentRoomModel.bedsLeft.toString() + " BedS Left"
             }
-            else -> holder.bedsLeftTv.text = currentRoomModel.bedsLeft.toString() + "Bed Left"
+            else -> holder.bedsLeftTv.text = currentRoomModel.bedsLeft.toString() + " Bed Left"
         }
 
         // make "bed" singular or plural depending on the number of bed left
         when {
             currentRoomModel.numberOfGuest > 1 -> {
-                holder.numberOfGuestTv.text = currentRoomModel.numberOfGuest.toString() + "BedS Left"
+                holder.numberOfGuestTv.text = currentRoomModel.numberOfGuest.toString() + " Guests"
             }
-            else -> holder.numberOfGuestTv.text = currentRoomModel.numberOfGuest.toString() + "Bed Left"
+            else -> holder.numberOfGuestTv.text = currentRoomModel.numberOfGuest.toString() + " Guest"
         }
 
         if (currentRoomModel.bathroom){
