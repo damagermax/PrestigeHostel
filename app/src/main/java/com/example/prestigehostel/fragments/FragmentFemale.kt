@@ -5,8 +5,12 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
+import com.example.prestigehostel.FragmentDashboardDirections
 import com.example.prestigehostel.R
+import com.example.prestigehostel.adapters.NavigateToDetailScreen
 import com.example.prestigehostel.adapters.RoomAdapter
 import com.example.prestigehostel.models.RoomModel
 
@@ -14,7 +18,7 @@ import com.example.prestigehostel.models.RoomModel
 /**
  * created by maxwell takyi on 22 april 2022
  */
-class FragmentFemale : Fragment() {
+class FragmentFemale : Fragment() , NavigateToDetailScreen{
 
     private lateinit var roomAdapter: RoomAdapter
     private lateinit var recyclerView: RecyclerView
@@ -56,10 +60,16 @@ class FragmentFemale : Fragment() {
             RoomModel("10th F 18","£ 665",2,2,kitchen = false,false),
             RoomModel("5th F 258","£ 7785",4,0,kitchen = true,false),
         )
-        roomAdapter= RoomAdapter()
+        roomAdapter= RoomAdapter(this)
         recyclerView.setHasFixedSize(true)
         roomAdapter.setData(dummy)
         recyclerView.adapter=roomAdapter
+    }
+
+    override fun selectedRoom(roomModel: RoomModel) {
+        Toast.makeText(requireContext(),"female",Toast.LENGTH_SHORT).show()
+        val action=FragmentDashboardDirections.actionFragmentDashboardToFragmentDetail()
+        findNavController().navigate(action)
     }
 
 }

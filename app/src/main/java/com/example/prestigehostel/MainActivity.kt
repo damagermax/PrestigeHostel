@@ -3,7 +3,10 @@ package com.example.prestigehostel
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.WindowManager
+import androidx.appcompat.widget.Toolbar
 import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.AppBarConfiguration
+import androidx.navigation.ui.setupWithNavController
 import androidx.viewpager2.widget.ViewPager2
 import com.google.android.material.tabs.TabLayout
 
@@ -18,6 +21,10 @@ class MainActivity : AppCompatActivity() {
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.nav_host_fragment) as NavHostFragment
         val navController = navHostFragment.navController
+
+        val toolbar:Toolbar=findViewById(R.id.toolBar)
+        val appBarConfiguration = AppBarConfiguration(navController.graph)
+           toolbar .setupWithNavController(navController, appBarConfiguration)
 
 
     }

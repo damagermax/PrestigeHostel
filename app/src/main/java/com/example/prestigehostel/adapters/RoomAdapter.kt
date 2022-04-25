@@ -17,7 +17,7 @@ const val AVAILABLE: String = "Available"
 const val ALMOST_FULL: String = "Almost Full"
 const val FULL: String = "Full"
 
-class RoomAdapter : RecyclerView.Adapter<RoomAdapter.RoomViewHolder>() {
+class RoomAdapter (private val navigateToDetailScreen: NavigateToDetailScreen): RecyclerView.Adapter<RoomAdapter.RoomViewHolder>() {
 
     private var mRoomModel = emptyList<RoomModel>()
 
@@ -46,6 +46,12 @@ class RoomAdapter : RecyclerView.Adapter<RoomAdapter.RoomViewHolder>() {
 
         holder.numberTv.text = currentRoomModel.number
         holder.priceTv.text = currentRoomModel.price
+
+        // selected room clickListener
+        holder.itemView.setOnClickListener {
+            navigateToDetailScreen.selectedRoom(currentRoomModel)
+
+        }
 
 
         // change status indicator color and status text depending on room status
@@ -98,4 +104,9 @@ class RoomAdapter : RecyclerView.Adapter<RoomAdapter.RoomViewHolder>() {
         mRoomModel=roomData
     }
 
+
+}
+
+interface NavigateToDetailScreen{
+    fun selectedRoom(roomModel: RoomModel)
 }

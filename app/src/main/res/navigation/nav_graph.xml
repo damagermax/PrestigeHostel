@@ -29,6 +29,41 @@
     <fragment
         android:id="@+id/fragmentDashboard"
         android:name="com.example.prestigehostel.FragmentDashboard"
-        android:label="fragment_dashboard"
-        tools:layout="@layout/fragment_dashboard" />
+        android:label="@string/empty"
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_fragmentDashboard_to_fragmentDetail"
+            app:destination="@id/fragmentTemsAndConditions" />
+        <action
+            android:id="@+id/action_fragmentDashboard_to_fragmentAccount"
+            app:destination="@id/fragmentAccount" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentTemsAndConditions"
+        android:name="com.example.prestigehostel.fragments.FragmentTermsAndCondtions"
+        android:label="Terms &amp; Conditions"
+        tools:layout="@layout/fragment_terms_and_conditions" />
+    <fragment
+        android:id="@+id/fragmentFemale"
+        android:name="com.example.prestigehostel.fragments.FragmentFemale"
+        android:label="fragment_female"
+        tools:layout="@layout/fragment_female" >
+        <action
+            android:id="@+id/action_fragmentFemale_to_fragmentDetail"
+            app:destination="@id/fragmentTemsAndConditions" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentMale"
+        android:name="com.example.prestigehostel.fragments.FragmentMale"
+        android:label="fragment_male"
+        tools:layout="@layout/fragment_male" >
+        <action
+            android:id="@+id/action_fragmentMale_to_fragmentDetail"
+            app:destination="@id/fragmentTemsAndConditions" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentAccount"
+        android:name="com.example.prestigehostel.fragments.FragmentAccount"
+        android:label="fragment_account"
+        tools:layout="@layout/fragment_account" />
 </navigation>

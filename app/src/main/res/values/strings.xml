@@ -1,7 +1,80 @@
 <resources>
     <string name="app_name">PrestigeHostel</string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="empty"> </string>
+    <string name="hello_blank_fragment">hi</string>
+
+    <!--terms and conditions-->
+    <string name="terms">
+        \n
+        <font size="18"> Here are the general terms and conditions of Prestige Hostel .</font>
+         \n\n
+
+        <font fgcolor='#CCFF3B30'><b>Perching is strictly prohibited and will result in immediate removal from hostel with NO REFUND.</b></font> \n\n
+
+
+       Also note that the Hostel defines a semester as scheduled by the University of Professional Studies  \n\n
+
+
+       <b><u>Bookings and Reservations</u></b>\n
+        Customers may make reservations in advance through Hostel website. When making
+        reservations, Customers will be required to provide identification information including,
+        but not limited to, their name, university, contact telephone number, email address and guardian\'s
+        details. Payment will be required for all reservations within 24hours of booking. Payments made are not
+        refundable. Reservations booked in advance do not constitute a legally binding contract between the Hostel
+        and the Customer until the Hostel confirms the reservation with the Customer. Bookings made through a third party
+        website is not binding. Customers may extend their stay subject to availability; rates are subject to change. The Hostel
+        will use all reasonable endeavours to accommodate such requests. \n\n
+
+
+        <b><u> Fees and Payments</u></b>\n
+       All rates are subject to change.\n
+Rates and prices are quoted when making reservations apply only to accommodation unless otherwise stated. Additional charges may apply for booking specific beds in advance.\n
+Payments are to be made to the Hostel\'s bank details.\n
+A confirmation email will be sent after reservation has been approved.\n
+Proof of payment is required when moving in. \n\n
+
+
+          <b><u> Cancellations</u></b>\n
+Reservations will be cancelled if payment isn\'t made within 24 hours of payment \n\n
+
+      <b><u> Check-in and Check-out</u></b>\n
+Check-in time at the beginning of each semester will be at 8am. Students are to Check-out within 2 days after the end of each semester.\n\n
+
+
+        <b><u>  Hostel Rules</u></b>\n
+Noise: We ask that you respect other guests by limiting the amount of noise after 11pm.\n
+Smoking: The rooms and common areas within the Hostel are non-smoking. If you set off a fire alarm and fire brigade attends you will be fined. Tampering with fire equipment including extinguishers and fire hoses may result in you being asked to leave the premises.\n
+Belongings: We do not hold any responsibility for the safekeeping of your personal property in or around the premises. This includes all private and public areas.\n
+Luggage room: Luggage is left at owner‘s risk.\n
+Any person deemed a risk to themselves or others will be removed.\n
+Any form of abuse towards any staff member or other guests will not be tolerated and you will be evicted off the premises.\n
+You will be held liable for any damages to the property caused by you, the Customer. You will be charged for the damages/call out fee which could result in you being evicted from the property.\n
+Eviction is at the management\‘s discretion and includes but is not limited to the rules above. Guests who choose not to follow the above House Rules will be asked to leave the hostel with  <font fgcolor='#CCFF3B30'><b><u>NO REFUND.</u></b></font> \n
+Customers are required to conduct themselves in a reasonable and responsible manner at all times when on Hostel property and must not act in any way which may disturb other guests. Failure to adhere to this requirement may result in a Customer being asked to leave the Hostel in which event all sums due shall become immediately payable.\n
+No animals are allowed in the Hostel. \n\n
+
+      <b><u>    Limitation of Liability</u></b>\n
+To the fullest extent permissible by law, the Hostel‘s liability for any loss or damage suffered by Customers shall be limited to that which arises out of the negligence of the Hostel‘s employees, subcontractors or agents. \n
+The Hostel shall not be liable for any indirect loss or damage which may be suffered by Customers including, but not limited to, loss of income, loss of business, loss of profits, loss of opportunity, loss of anticipated savings or loss of data. \n\n
+
+       <b><u>     Legislation</u></b>\n
+        Should any disagreement befall, it will only be dealt with in a Ghanaian court. These terms and conditions shall be governed by Ghana\'s Law and the Courts of the Republic of Ghana shall have exclusive jurisdiction.\n\n
+
+
+        <b><u>   General</u></b>\n
+        The Customers‘s rights as a consumer under consumer protection legislation from time to time in force shall not be affected by these Terms and Conditions. \n
+        The Hostel may, from time to time, change these Terms and Conditions without notice, however it will use its reasonable endeavours to inform Customers as soon as is reasonably possible of any such changes. \n\n
+
+
+         <b><u>   No waiver</u></b>\n
+        No failure by the Hostel to enforce any provision in these Terms and Conditions shall constitute a waiver of the right to subsequently enforce that provision or any other provision of these Terms and Conditions. Such failure shall not be deemed to be a waiver of any preceding or subsequent breach and shall not constitute a continuing waiver. \n\n
+
+         <b><u>  Severance</u></b>\n
+        If any provision of these Terms and Conditions is held by any competent authority to be invalid or unenforceable in whole or in part the validity of the other provisions of these Terms and Conditions and the remainder of the provision in question shall not be affected. \n
+
+
+    </string>
+
     <string name="sign_up">Sign Up</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
@@ -13,6 +86,8 @@
     <string name="signup">signup</string>
     <string name="sign_up_iamge">sign up iamge</string>
     <string name="sign_in_image">sign in image</string>
+    <string name="i_agree">I Agree</string>
+    <string name="book_now">Book Now</string>
 
 
 </resources>
