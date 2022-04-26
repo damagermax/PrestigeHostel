@@ -3,7 +3,7 @@
     <string name="empty"> </string>
     <string name="hello_blank_fragment">hi</string>
 
-    <!--terms and conditions-->
+    <!--terms and conditions start-->
     <string name="terms">
         \n
         <font size="18"> Here are the general terms and conditions of Prestige Hostel .</font>
@@ -74,7 +74,12 @@ The Hostel shall not be liable for any indirect loss or damage which may be suff
 
 
     </string>
+    <!--terms and conditions end-->
 
+    <!--  embed google map start  -->
+
+
+    <!--  embed google map end    -->
     <string name="sign_up">Sign Up</string>
     <string name="email">Email</string>
     <string name="password">Password</string>
