@@ -16,13 +16,12 @@
 
         <TextView
             android:id="@+id/roomNumber"
-            android:layout_marginBottom="10dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
             android:text="2nd F 189"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            />
+            android:textColor="@color/orange"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/roomPrice"

@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_margin="15dp"
     android:layout_height="match_parent"
-    tools:context=".FragmentSignIn">
+    tools:context=".fragments.FragmentSignIn">
 
     <ImageView
         android:layout_width="match_parent"
@@ -45,7 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginTop="30dp"
-        android:id="@+id/signUpBtn"
+        android:id="@+id/signInBtn"
         app:cornerRadius="0dp"
         android:text="@string/signIn"/>
 

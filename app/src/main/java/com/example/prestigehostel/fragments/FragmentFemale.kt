@@ -8,7 +8,6 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.RecyclerView
-import com.example.prestigehostel.FragmentDashboardDirections
 import com.example.prestigehostel.R
 import com.example.prestigehostel.adapters.NavigateToDetailScreen
 import com.example.prestigehostel.adapters.RoomAdapter

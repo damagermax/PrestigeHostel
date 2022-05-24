@@ -100,7 +100,7 @@ class RoomAdapter (private val navigateToDetailScreen: NavigateToDetailScreen): 
     }
 
     override fun getItemCount() = mRoomModel.size
-    fun setData(roomData:List<RoomModel>){
+    fun setData(roomData: List<RoomModel>){
         mRoomModel=roomData
     }
 

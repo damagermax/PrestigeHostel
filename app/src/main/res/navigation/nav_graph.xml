@@ -3,20 +3,23 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/fragmentSignIn">
+    app:startDestination="@id/fragmentDashboard">
 
     <fragment
         android:id="@+id/fragmentSignUp"
-        android:name="com.example.prestigehostel.FragmentSignUp"
+        android:name="com.example.prestigehostel.fragments.FragmentSignUp"
         android:label="@string/sign_up"
         tools:layout="@layout/fragment_sign_up">
         <action
             android:id="@+id/action_fragmentSignUp_to_fragmentSignIn"
             app:destination="@id/fragmentSignIn" />
+        <action
+            android:id="@+id/action_fragmentSignUp_to_fragmentDashboard"
+            app:destination="@id/fragmentDashboard" />
     </fragment>
     <fragment
         android:id="@+id/fragmentSignIn"
-        android:name="com.example.prestigehostel.FragmentSignIn"
+        android:name="com.example.prestigehostel.fragments.FragmentSignIn"
         android:label="@string/sign_in"
         tools:layout="@layout/fragment_sign_in">
         <action
@@ -28,7 +31,7 @@
     </fragment>
     <fragment
         android:id="@+id/fragmentDashboard"
-        android:name="com.example.prestigehostel.FragmentDashboard"
+        android:name="com.example.prestigehostel.fragments.FragmentDashboard"
         android:label="@string/empty"
         tools:layout="@layout/fragment_dashboard">
         <action
@@ -37,6 +40,9 @@
         <action
             android:id="@+id/action_fragmentDashboard_to_fragmentAccount"
             app:destination="@id/fragmentAccount" />
+        <action
+            android:id="@+id/action_fragmentDashboard_to_fragmentSignIn"
+            app:destination="@id/fragmentSignIn" />
     </fragment>
     <fragment
         android:id="@+id/fragmentTemsAndConditions"

@@ -7,11 +7,11 @@
     android:layout_margin="15dp"
     android:orientation="vertical"
 
-    tools:context=".FragmentSignUp">
+    tools:context=".fragments.FragmentSignUp">
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="250dp"
         android:layout_marginTop="30dp"
         android:src="@drawable/ic_sign_up"
         android:contentDescription="@string/sign_up_iamge" />
@@ -34,11 +34,23 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
         android:layout_height="wrap_content"
         android:hint="@string/password">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/signUpPasswordInput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Repeat password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/signUpRepreatPasswordInput"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/white" />
